@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Image Firebase Storage Example</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+      <form >
+        
+        <div class="container">
+          <div id = "overlay" class="overlay hidden">
+             <img id = 'overlay-img' class = 'tree-img'>        
+            <i id = 'b_close' class="material-symbols-outlined">
+disabled_by_default
+</i>
+            
+          </div>
+
+  
+          <div class="form-holder">
+            <div id = 'thumb1' class = 'img-holder'></div>
+          </div>
+          <div class="input-holder" id = "d_treeName">
+            <label for="tb_tree"> Tree Name</label>
+            <input type="text" id="tb_tree" placeholder = 'Enter in the tree name.'>
+          </div>
+          <div class="input-holder" id = "d_partName">
+            <label for="tb_part"> part Name</label>
+            <input type="text" id="tb_part" placeholder = 'Enter in the tree part name.'>
+          </div>
+    
+      </form>
+
+      <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-storage.js"></script>
+    <script defer src="js/firebase.js"></script>
+    <script defer src="js/storage.js"></script>
+    <script defer src="js/thumb.js"></script>
+        <script defer src="js/overlay.js"></script>
+  </body>
+</html>
